@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  weather-app:
+    build: .
+    container_name: weather_app
+    command: python app.py
+    env_file:
+      - .env
